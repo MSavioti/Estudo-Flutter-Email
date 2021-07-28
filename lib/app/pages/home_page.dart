@@ -1,3 +1,4 @@
+import 'package:estudo_email/app/pages/widgets/email_buttons.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,8 +6,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: null,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('E-mail sending test'),
+      ),
+      body: EmailButtons(),
     );
   }
 }
